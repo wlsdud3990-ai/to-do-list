@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트로 오늘의 할 일(todolist) 구현하기</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="todolist.css">
+
+</head>
+
+<body>
+  <h1>자바스크립트로 오늘의 할 일(todolist) 구현하기</h1>
+  <div class="wrapper">
+    <header>
+      <h2>오늘의 일정 추가 - javascript</h2>
+      <div>
+        <input type="text" placeholder="오늘의 일정을 입력하세요." id="addValue" autofocus>
+        <button type="submit" id="submit_btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- 내용 출력리스트를 위한 영역 -->
+      <section class="list_box">
+        <ul class="todo_list">
+          <li>
+            <div id="result">&nbsp;</div>
+          </li>
+        </ul>
+      </section>
+      <div><button type="button" id="delete_btn">글 모두삭제</button></div>
+
+    </main>
+
+    <footer>
+      <address>Copyright&copy;2025 자바스크립트 오늘의 할 일 allrights reserved.</address>
+    </footer>
+  </div>
+
+  <!-- 외부 스크립트 연결하기 -->
+  <script src="./script/todolist.js"></script>
+
+</body>
+
+</html>
